@@ -19,8 +19,11 @@ parent scope    scope: false
 child scope     scope:true
 absolute scope  scope:{}
 
-如何访问父scope
-= 使用父scope中的属性， 
+scope:true/scope:{} 场景
+子scope如何取父scope中的属性
+
+= 使用父scope中的属性
+
 @(attr) 表达式方式，使用父scope计算表达式，将赋值给directive的attr。如果scope中的property属性与directive中的attr 同名时，可以不用写attr
 
 比如：
@@ -39,9 +42,15 @@ app.directive('helloWorld', function() {
 </body>
 这里把{{color}}的值赋值给color-attr， 而color-attr的值又绑定给了scope中的color
 
-
 &(function)
 
+scope:true/scope:{} 场景
+子scope如何将属性动态反馈到父scope中
+$eval
+
+tranclude
+http://www.html-js.com/article/1869, 嵌入部分
+在AngularJS中你只在一个指令的模板中只能申明一个ng-tranclude
 
 
 2. 工程打包方式
