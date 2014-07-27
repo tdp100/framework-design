@@ -1,5 +1,5 @@
-var searchbox = angular.module("fm.searchbox", []);
-searchbox.directive("fmSearch", function ($parse) {
+var searchbox = angular.module("nz.searchbox", []);
+searchbox.directive("nzSearch", function ($parse) {
     return {
         "restrict": "ECA",
         "scope": {
