@@ -61,4 +61,7 @@ https://github.com/jsprodotcom/source/blob/master/AngularJS_Note_Taker-source_co
 6. 文档 ng-doc  http://usejsdoc.org/
    https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation
 
+LESS 语法，每一个控件都对应一个less文件
+http://www.lesscss.net/features/#features-overview-feature--variables-
+
 

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*.after {
+  box-sizing: border-box;
+}
+.search-box {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 0 10px;
+  height: 36px;
+}
+.search-box .search-by {
+  border: 0 none;
+  outline: 0 none;
+  height: 34px;
+}
+.search-box a {
+  color: #cccccc;
+  text-decoration: none;
+}
+.search-box a.clear {
+  opacity: 0;
+}

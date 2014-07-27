@@ -1,0 +1,23 @@
+//由左中右三部分组成
+.search-box {
+  display: inline-block;
+  border: @border;
+  border-radius: @radius;
+  padding: 0 10px;
+  height: @form-item-height;
+  //中间的input 组件
+  .search-by {
+      border: @no-border;
+      outline: @no-outline;
+    height: @form-item-height - 2;
+  }
+
+  a {
+    color: @color;
+    text-decoration: none;
+  }
+
+  a.clear {
+    opacity: 0;//透明
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="main">
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试组件</title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../less/nezha.css">
+</head>
+<body>
+    <div class="container" ng-controller="component">
+        <div class="row">
+            <div class="h3">表单组件</div>
+            <div class="col-md-3">
+                <!--search-box 组件-->
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input class="search-by" ng-model="value">
+                    <a class="fa fa-times"></a>
+                </div>
+            </div>
+
+            directive:
+            <div class="nz-search" value="value" search="search()"></div>
+        </div>
+    </div>
+    <script type="application/javascript" src="jquery.min.js"></script>
+    <script type="application/javascript" src="../angular/angular.min.js"></script>
+    <script type="application/javascript" src="../js/searchbox.js"></script>
+    <script type="application/javascript" src="main.js"></script>
+</body>
+</html>
