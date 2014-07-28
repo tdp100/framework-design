@@ -29,9 +29,9 @@ searchbox.directive("nzSearch", function ($parse) {
             });
 
             //键盘事件
-            var keydown = function (event) {
-                event.stopPropagation();
-                if (event.which !== 13) {
+            var keydown = function (evt) {
+                evt.stopPropagation();
+                if (evt.which !== 13) {
                     return;
                 }
                 var search = scope.search;
@@ -41,9 +41,26 @@ searchbox.directive("nzSearch", function ($parse) {
             };
             elem.bind("keydown", keydown); //避免使用闭包
 
+            //focus 效果
+            var focus = function(evt) {
+                evt.stopPropagation();
+                elem.addClass("focus");
+            };
+            var unfocus = function(evt) {
+                evt.stopPropagation();
+                elem.removeClass("focus");
+            };
+            elem.find(".search-by").bind("focus", focus);
+            elem.find(".search-by").bind("focusout", unfocus);
+
+            //宽度动态变化计算
+
+
             //元素销毁
             scope.$on("$destroy", function () {
                 elem.unbind("keydown", keydown);
+                elem.find(".search-by").unbind("focus", focus);
+                elem.find(".search-by").unbind("focusout", unfocus);
             });
         }
     }

@@ -17,7 +17,7 @@ scope
 
 parent scope    scope: false
 child scope     scope:true
-absolute scope  scope:{}
+absolute scope  scope:
 
 scope:true/scope:{} 场景
 子scope如何取父scope中的属性
