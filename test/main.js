@@ -1,4 +1,4 @@
-var main = angular.module("main",["ng","nz.searchbox"]);
+var main = angular.module("main",["ng","nz.searchbox","ui.bootstrap"]);
 main.controller("component", function($scope) {
     $scope.value = "123";
     $scope.search = function() {

@@ -6,6 +6,7 @@ searchbox.directive("nzSearch", function ($parse) {
             "value": "=",
             "search": "&"
         },
+
         "replace": true,
         "templateUrl": "../template/searchbox.html",
         "link": function (scope, elem, attrs) {
@@ -54,7 +55,14 @@ searchbox.directive("nzSearch", function ($parse) {
             elem.find(".search-by").bind("focusout", unfocus);
 
             //宽度动态变化计算
-
+            var autoInputWidth = function() {
+                var width = parseInt(elem.css("width"), 10);
+                var padding = parseInt(elem.css("padding-right"), 10) * 2;
+                var leftIcon = parseInt(elem.find(".fa-search").css("width"), 10);
+                var rightIcon = parseInt(elem.find("a").css("width"), 10);
+                elem.find(".search-by").css("width", width - leftIcon - rightIcon - padding - 20);
+            };
+            autoInputWidth();
 
             //元素销毁
             scope.$on("$destroy", function () {

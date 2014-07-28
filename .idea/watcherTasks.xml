@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions">
-    <TaskOptions isEnabled="false">
-      <option name="arguments" value=" &quot;D:\Program Files\nodejs\node_modules\less\bin\lessc&quot; $FileName$" />
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value=" &quot;C:\Users\TDP\AppData\Roaming\npm\node_modules\less\bin\lessc&quot; $FileName$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .less files into .css files" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -21,7 +21,7 @@
       </option>
       <option name="outputFromStdout" value="true" />
       <option name="passParentEnvs" value="true" />
-      <option name="program" value="D:/Program Files/nodejs/node.exe" />
+      <option name="program" value="C:/Program Files/nodejs/node.exe" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$FileDir$" />
