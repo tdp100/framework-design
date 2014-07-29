@@ -1,6 +1,6 @@
 //由左中右三部分组成
 .search-box {
-  display: inline-block;
+//  display: inline-block;
   border: @border;
   border-radius: @radius;
   padding: 0 10px;
@@ -11,13 +11,19 @@
     outline: @no-outline;
     height: @form-item-height;
   }
-
-  a {
-    color: @color;
-    text-decoration: none;
+  .input-group-addon {
+    background: none;
+    border:none;
+    padding: 0 2px;
   }
-
-  a.clear {
+  .form-control {
+    padding: 6px 6px;
+  }
+  .form-control:focus {
+    border: none;
+    box-shadow: none;
+  }
+  span.clear {
     opacity: 0; //透明
   }
 }
