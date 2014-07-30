@@ -7,6 +7,10 @@
 *.after {
   box-sizing: border-box;
 }
+.disabled {
+  cursor: default;
+  color: #e6e8ea;
+}
 .focus {
   border-color: #66afe9;
   outline: 0;

@@ -64,4 +64,8 @@ https://github.com/jsprodotcom/source/blob/master/AngularJS_Note_Taker-source_co
 LESS 语法，每一个控件都对应一个less文件
 http://www.lesscss.net/features/#features-overview-feature--variables-
 
+flat-ui
+https://github.com/designmodo/Flat-UI
+http://designmodo.github.io/Flat-UI/
+
 

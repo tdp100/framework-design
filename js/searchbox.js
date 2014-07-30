@@ -1,8 +1,4 @@
 var searchbox = angular.module("nz.searchbox", []);
-searchbox.controller("nzSearchCtrl", function($scope) {
-    $scope.clearCls = "";
-    $scope.placeholder = "请输入搜索内容";
-});
 /**
  * @ngdoc nzSearch
  */
