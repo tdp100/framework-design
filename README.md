@@ -68,4 +68,13 @@ flat-ui
 https://github.com/designmodo/Flat-UI
 http://designmodo.github.io/Flat-UI/
 
+icon design:http://www.youtube.com/watch?v=t6VD2EKfvqc
+
+#chapter2 lazy-load
+http://blog.getelementsbyidea.com/load-a-module-on-demand-with-angularjs/
+http://ify.io/lazy-loading-in-angularjs/
+
+如何消除require一次性加文件全部加载上来了
+
+html2js 可以将directive定义的模板转化成JS代码
 
