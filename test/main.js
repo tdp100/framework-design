@@ -1,4 +1,4 @@
-var main = angular.module("main", ["ng","nz.searchbox","ui.bootstrap"]);
+var main = angular.module("main", ["ng","nz.searchbox","nz.menus","ui.bootstrap"]);
 main.config(["$controllerProvider", "$compileProvider", function($controllerProvider, $compileProvider){
     main.controllerProvider = $controllerProvider;
     main.compileProvider = $compileProvider;
@@ -14,6 +14,46 @@ main.controller("component", function($scope,  $modal) {
     $scope.deleter = function() {
         angular.element(".search-box").remove();
     };
+
+    $scope.services = [
+        {
+            "name": "首页", //一级菜单名称
+            "node": {
+                "state": "home",//菜单对应的state
+                "scenes": ["allinone"],    //菜单对应的场景
+                "rights": ["12"]     //菜单对应的权限
+            }
+        },{
+            "name": "服务", //一级菜单名称
+            "node": {
+                "state": "home",//菜单对应的state
+                "scenes": ["allinone"],    //菜单对应的场景
+                "rights": ["12"]     //菜单对应的权限
+            },
+            "children": [
+                {
+                    "name": "所有服务", //一级菜单名称
+                    "children": [{
+                        "name": "服务", //一级菜单名称
+                        "node": {
+                            "state": "home",//菜单对应的state
+                            "scenes": ["allinone"],    //菜单对应的场景
+                            "rights": ["12"]     //菜单对应的权限
+                        },
+                    }]
+                },
+                {
+                    "name": "home.er1", //一级菜单名称
+                    "node": {
+                        "state": "home.er1",//菜单对应的state
+                        "scenes": ["allinone"],    //菜单对应的场景
+                        "rights": ["123"]     //菜单对应的权限
+                    }
+                }
+            ]
+        }
+    ];
+
 
     $scope.openWindow = function() {
         var modalInstance = $modal.open({

@@ -1,0 +1,19 @@
+<nav class="menus">
+    <!-- 所有的服务 -->
+    <ul class="menus-nav" ng-repeat="service in services">
+        <li>
+            <a ng-href="#{{service.id}}" ng-bind="service.name"></a>
+            <span id="{{service.id}}" ng-if="service.children.length > 0"></span>
+            <ul class="subs" ng-if="service.children.length > 0">
+                <li ng-repeat="child in service.children">
+                    <a href="#" ng-bind="child.name"></a>
+                    <ul>
+                        <li ng-repeat="submenue in child.children">
+                            <a href="#" ng-bind="submenue.name"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

@@ -78,3 +78,4 @@ http://ify.io/lazy-loading-in-angularjs/
 
 html2js 可以将directive定义的模板转化成JS代码
 
+视图的加载事件:http://www.bennadel.com/blog/2555-preloading-data-before-executing-nginclude-in-angularjs.htm
