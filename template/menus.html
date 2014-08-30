@@ -1,7 +1,7 @@
 <nav class="menus">
     <!-- 所有的服务 -->
-    <ul class="menus-nav" ng-repeat="service in services">
-        <li>
+    <ul class="menus-nav">
+        <li ng-repeat="service in services">
             <a ng-href="#{{service.id}}" ng-bind="service.name"></a>
             <span id="{{service.id}}" ng-if="service.children.length > 0"></span>
             <ul class="subs" ng-if="service.children.length > 0">
