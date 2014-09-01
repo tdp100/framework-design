@@ -5,6 +5,7 @@ main.config(["$controllerProvider", "$compileProvider", function($controllerProv
 }]);
 main.controller("component", function($scope,  $modal) {
     $scope.value = "123";
+    $scope.fruit = ["苹果","梨","香蕉"];
     $scope.search = function() {
         console.log("search value = ", $scope.value);
     };
