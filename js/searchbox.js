@@ -2,7 +2,7 @@ var searchbox = angular.module("nz.searchbox", []);
 /**
  * @ngdoc nzSearch
  */
-searchbox.directive("nzSearch", function ($parse) {
+searchbox.directive("nzSearch", function () {
     return {
         "restrict": "ECA",
         "scope": {

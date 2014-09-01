@@ -1,4 +1,4 @@
-var main = angular.module("main", ["ng","nz.searchbox","nz.menus","ui.bootstrap"]);
+var main = angular.module("main", ["ng","nz.searchbox","nz.menus", "nz.select", "ui.bootstrap"]);
 main.config(["$controllerProvider", "$compileProvider", function($controllerProvider, $compileProvider){
     main.controllerProvider = $controllerProvider;
     main.compileProvider = $compileProvider;
