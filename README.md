@@ -52,7 +52,7 @@ tranclude
 http://www.html-js.com/article/1869, 嵌入部分
 在AngularJS中你只在一个指令的模板中只能申明一个ng-tranclude
 https://github.com/jsprodotcom/source/blob/master/AngularJS_Note_Taker-source_code.zip
-
+http://angular-tips.com/blog/2014/03/transclusion-and-scopes/
 
 2. 工程打包方式
 3. 如何解耦(与样式)
