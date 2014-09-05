@@ -1,25 +1,29 @@
 var select = angular.module("nz.select", []);
-//select.directive("nzItem", function () {
-//    return {
-//        "restrict": "ECA",
-//        "replace": true,
-//        "require": "^nzMenu",
+select.directive("nzItemTemplate", function () {
+    return {
+        "restrict": "ECA",
+        "replace": true,
 //        "templateUrl": "../template/select-item.html",
-//        "transclude": true,
-//        "link": function (scope, elem, attrs, controller, transcludeFn) {
-//            transcludeFn(scope, function (clone) {
-//                elem.html(clone);
-//            });
-//        }
-//    }
-//});
+        "transclude": true,
+        "link": function (scope, elem, attrs, controller, transcludeFn) {
+            console.log("nzItemTemplate.scope = ",scope);
+            console.log("nzItemTemplate.scope.fruit = ", scope.fruit);
+            transcludeFn(scope, function (clone) {
+                elem.html(clone);
+            });
+        }
+    }
+});
 select.directive("nzMenu", function () {
     return {
         "restrict": "ECA",
         "replace": true,
-        "templateUrl": "../template/select-menu.html",
+//        "templateUrl": "../template/select-menu.html",
         "transclude": true,
+        "scope": true,
         "link": function (scope, elem, attrs, controller, transcludeFn) {
+            console.log("nzMenu.scope = ",scope);
+            scope.menu = "tdp";
             transcludeFn(scope, function (clone) {
                 elem.html(clone);
             });
@@ -36,6 +40,7 @@ select.directive("nzSelect", function () {
         "templateUrl": "../template/select.html",
         "transclude": true,
         "link": function (scope, elem, attrs, controller, transcludeFn) {
+            console.log("nzSelect.scope = ",scope);
             //focus 效果
             var focus = function (evt) {
                 evt.stopPropagation();
